@@ -65,52 +65,9 @@ $(document).ready(function() {
 
     $( '.filterbutton' ).first( ).trigger( 'click' );
 
-        });
-
- 
-
- 
-    let tooltip = document.createElement( 'div' );
-    tooltip.classList.add( 'tooltip' );
-    document.body.appendChild( tooltip );
+        })
 
 
-    document.addEventListener( 'mousemove', function( event ) {
-        event.preventDefault( );
-
-        var lft = event.clientX;
-        var rgt = lft + tooltip.offsetWidth;
-        if ( rgt > window.innerWidth )
-            lft -= rgt - window.innerWidth;
-
-        var top = event.clientY;
-        var btm = top + tooltip.offsetHeight;
-        if ( btm > window.innerHeight )
-            top -= btm - window.innerHeight;
-
-
-        tooltip.style.top = top + 'px';
-        tooltip.style.left = lft + 'px';
-    } );
-
-
-    let griditems = document.querySelectorAll( '[data-tooltip-container]' );
-    griditems.forEach( function( griditem ) {
-        griditem.addEventListener( 'mouseover', function( ) {
-            var tooltiptext = this.getAttribute( 'data-tooltip-label' );
-            tooltip.innerHTML = tooltiptext;
-        } );
-
-        griditem.addEventListener( 'mouseout', function( event ) {
-            var lft = event.clientX;
-            var top = event.clientY;
-
-            var hovered_element = document.elementFromPoint( lft, top );
-            if ( hovered_element.getAttribute( 'data-tooltip-label' ) == null )
-                tooltip.innerHTML = '';
-        } );
-    } );
-
-
+$('.aboutTrigger').css('color', random_color);
 
 
