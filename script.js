@@ -64,7 +64,17 @@ $(document).ready(function() {
         $( '.homeView' ).removeClass( 'active' );
     });
 
-    $( '.homeTrigger' ).first( ).trigger( 'click' );
+    // $( '.homeTrigger' ).first( ).trigger( 'click' );
+    // $( '.filterbutton' ).first( ).trigger( 'click' );
+
+    if($(window).width() >= 1024) {
+        // if browser window is larger or equal
+        $( '.homeTrigger' ).first( ).trigger( 'click' );
+    } else {
+        // if browser window is smaller
+        $( '.filterbutton' ).first( ).trigger( 'click' );
+    }
+
 
 });
 
