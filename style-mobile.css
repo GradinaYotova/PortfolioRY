@@ -4,7 +4,7 @@ body {margin:0;width:99vw;overflow-x:hidden!important; position:relative;}
 
 #wrapper{width:100%; margin-left:0;}
 
-.buttons{margin-left:0.5em;margin-top:0.8vh;margin-bottom:1vh;width:100%;display:inline-block;}
+.buttons{margin-left:0em;margin-top:0.8vh;margin-bottom:1vh;width:100%;display:inline-block;}
 
 .filterbutton{margin-bottom:0.5em;border:none;font-size:1em;font-family:myFont;background-color:transparent;color:#000;}
 .filterbutton:focus {outline:0;color:#000;}
@@ -58,6 +58,7 @@ a:hover{
   margin:0 auto;
   display:block;
   margin-left:1em;
+  display:none;
 }
 
 .project-img{
