@@ -12,6 +12,7 @@ body {width: 99vw;overflow-x:hidden;}
 .back:focus{outline:0;border:none;font-size:1.3em;font-family:myFont;margin-right:1em;background-color:transparent;}
 .back:hover{filter: drop-shadow(0 0 0.75rem #FF00FF);color:#000;}
 
+
 a{text-decoration:none;color:#000;cursor:pointer;}
 
 .title{

@@ -1,8 +1,9 @@
 $(document).ready(function() { 
-    $('.aboutTrigger').click(function() {
+    $('.homeTrigger').click(function() {
         $(this).addClass("active");
         $(this).siblings().removeClass("active");
-        $('.aboutView').addClass("active");
+        $('.homeView').addClass("active");
+        $('.aboutView').removeClass("active");
         $('.index').removeClass("active");
         $('.browserView').removeClass("active");
         $('.installationView').removeClass("active");
@@ -60,14 +61,11 @@ $(document).ready(function() {
         button.siblings().removeClass("active");
 
         $( '.index' ).addClass( 'active' );
-        $( '.aboutView' ).removeClass( 'active' );
-    })
+        $( '.homeView' ).removeClass( 'active' );
+    });
 
-    $( '.filterbutton' ).first( ).trigger( 'click' );
+    $( '.homeTrigger' ).first( ).trigger( 'click' );
 
-        })
-
-
-$('.aboutTrigger').css('color', random_color);
+});
 
 
