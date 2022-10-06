@@ -130,13 +130,13 @@ a{text-decoration:none; color:#000;}
   display:inline-block;
   position: fixed;
   z-index: 100;
-  background-color: #fff;
-  opacity: 1;
+/*  background-color: #fff;
+*/  opacity: 1;
   border-radius: 100%;
   padding: 2vw;
   right: 2vw;
   left: auto;
-  filter: drop-shadow(0 0 0.75rem #000);
+  filter: drop-shadow(0 0 0.75rem #FF00FF);
 }
 
 .links:hover{
